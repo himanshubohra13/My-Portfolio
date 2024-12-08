@@ -1,13 +1,13 @@
 "use client";
 
-import {FaHtml5,FaCss3, FaJs, FaReact, FaPython, FaNodeJs, FaJava} from "react-icons/fa";
+import {FaHtml5,FaCss3, FaJs, FaReact, FaPython, FaNodeJs, FaJava,FaVuejs} from "react-icons/fa";
 
 import {SiTailwindcss,SiNextdotjs,SiDjango,SiPostgresql,SiCaddy, SiC} from "react-icons/si";
 
 
 const about={
     title:"About me",
-    description:"Loerem fdsfa ",
+    description:"I am a passionate Full Stack Developer with over a year of experience, specializing in Django, Vue.js, and PostgreSQL. I enjoy solving complex problems and building scalable, user-friendly web applications. With a background in Electronics and Communication, I bring a unique technical perspective to my work, constantly striving to improve and learn new skills. ",
     info:[
         {
             fieldName:"Name",
@@ -30,10 +30,6 @@ const about={
             fieldValue:'himanshubohra206@gmail.com'
         },
         {
-            fieldName:"Freelance",
-            fieldValue:'Available'
-        },
-        {
             fieldName:"Languages",
             fieldValue:'English, Hindi'
         },
@@ -46,17 +42,17 @@ const about={
 const experience={
     icon:"/assets/resume/badge.svg",
     title:"My experience",
-    description:"Lorem ipsum fdaf fdhsuia ieofp ajfasp",
+    description:"I have worked with dynamic teams to build impactful web applications, gaining hands-on expertise in full-stack development, API design, and database management, using technologies.",
     items:[
         {
             company:"GreyB",
             position:"Full Stack Developer",
-            duration:"2023 - Present"
+            duration:"June 2023 - Present"
         },
         {
-            company:"Web Design Studio",
-            position:"Full Stack Developer",
-            duration:"2023 - Present"
+            company:"GreyB",
+            position:"Junior Software Developer",
+            duration:"Jan 2023 - May 2023"
         }
     ]
 
@@ -68,11 +64,11 @@ const experience={
 const education={
     icon:"/assets/resume/cap.svg",
     title:"My Education",
-    description:"Lfe fdlae nnfe",
+    description:"I hold a Bachelor's degree in Electronics and Communication from the University Institute of Engineering Technology, where I developed a strong foundation in technical problem-solving and analytical skills, complemented by a passion for software development.",
     items:[
         {
             institute:"University Institute of Engineering Technology",
-            degree:"Bachelors",
+            degree:"Bachelors in Electronics and Communication",
             duration:"2019-2023"
         },
 
@@ -83,7 +79,7 @@ const education={
 // skills data
 const skills={
     title:"My Skills",
-    description:"lofdsafffffff",
+    description:"",
     skillList:[
         {
             icon:<FaHtml5/>,
@@ -98,34 +94,22 @@ const skills={
             name:"javascript"
         },
         {
-            icon:<FaReact/>,
-            name:"react.js"
+            icon:<FaVuejs/>,
+            name:"VueJs"
         },
-        {
-            icon:<SiNextdotjs/>,
-            name:"next.js"
-        },
-        {
+{
             icon:<SiTailwindcss/>,
             name:"tailwind.css"
-        },
-        {
-            icon:<FaNodeJs/>,
-            name:"node.js"
         },
         {
             icon:<FaPython/>,
             name:"python"
         },
-        {
+ {
             icon:<SiDjango/>,
             name:"django"
         },
-        {
-            icon:<FaJava/>,
-            name:"java"
-        },
-        {
+ {
             icon:<SiPostgresql/>,
             name:"postgres"
         },
@@ -133,6 +117,26 @@ const skills={
             icon:<SiCaddy/>,
             name:"caddy"
         },
+        {
+            icon:<FaReact/>,
+            name:"react.js"
+        },
+        {
+            icon:<SiNextdotjs/>,
+            name:"next.js"
+        },
+        
+        {
+            icon:<FaNodeJs/>,
+            name:"node.js"
+        },
+       
+       
+        {
+            icon:<FaJava/>,
+            name:"java"
+        },
+       
 
 
     ]
@@ -217,8 +221,9 @@ const Resume = () => {
                                 return ( <li key={index}>
                                     <TooltipProvider delayDuration={100}>
                                         <Tooltip>
-                                            <TooltipTrigger className="w-full h-[150px] rounded-xl bg-[#232329] flex justify-center items-center group" >
-                                                <div className="text-6xl group-hover:text-accent transition-all duration-300">{skill.icon}</div>
+                                            <TooltipTrigger className="w-full h-[150px] rounded-xl bg-[#232329] flex flex-col justify-center items-center group" >
+                                                <div className="text-6xl group-hover:text-accent transition-all duration-300 mb-1">{skill.icon}</div>
+                                                <p className="capitalize">{skill.name}</p>
                                             </TooltipTrigger>
                                             <TooltipContent>
                                                 <p className="capitalize">{skill.name}</p>
@@ -236,13 +241,12 @@ const Resume = () => {
                     <div className="flex flex-col gap-[30px]">
                         <h3 className="text-4xl font-bold ">{about.title}</h3>
                         <p className="max-2-[600px] text-white/60 mx-auto xl:mx-0">{about.description}</p>
-                        <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] mx-auto xl:mx-0">
+                        <ul className="grid grid-cols-1 xl:grid-cols-[repeat(auto-fill,_minmax(330px,_1fr))] gap-y-6 max-w-[700px] mx-auto xl:mx-0">
                             {about.info.map((item,index)=>{
-                                return <li key={index} className="flex items-center justify-center">
-                                            <span className="text-white/60">{item.fieldName}</span>    
+                                return <li key={index} className="flex items-center justify-start">
+                                            <span className="text-xl text-white/60 mr-2 ">{item.fieldName}</span>    
                                             <span className="text-xl">{item.fieldValue}</span>    
                                         </li>           
-
                             })}
                         </ul>
                     </div>

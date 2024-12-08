@@ -22,7 +22,6 @@ const info=[
     title:'Address',
     description:"Sector 32 Chandigarh",
 }
-
 ]
 
 import {motion} from 'framer-motion';
@@ -50,15 +49,15 @@ const Contact = () => {
                             <SelectContent>
                                 <SelectGroup>
                                     <SelectLabel>Select a service</SelectLabel>
-                                    <SelectItem value='est'>Web Development</SelectItem>
-                                    <SelectItem value='cst'>UI/UX Design</SelectItem>
-                                    <SelectItem value='mst'>Logo Design</SelectItem>
-
+                                    <SelectItem value='est'>Full Stack Web Developement</SelectItem>
+                                    <SelectItem value='cst'>Backend API Integration & Development</SelectItem>
+                                    <SelectItem value='mst'>Chrome Extension</SelectItem>
+                                    <SelectItem value='mst'>Web Application Security</SelectItem>
                                 </SelectGroup>
                             </SelectContent>
                         </Select>
                         <Textarea className='h-[200px]' placeholder='Type your message here.'/>
-                        <Button size='md' className='max-w-40'>Send Message</Button>
+                        <Button size='md' className='max-w-40 max-h-12 h-10' onClick={formSubmit}>Send Message</Button>
                     </form>
                 </div>
                 <div className='flex-1 flex items-center xl:justify-end order-1 xl:order-none mb-8 xl:mb-0'>

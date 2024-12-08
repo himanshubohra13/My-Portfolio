@@ -3,9 +3,9 @@ import {FaGithub, FaLinkedin} from 'react-icons/fa';
 import {TbBrandLeetcode} from 'react-icons/tb'
 
 const socials=[
-    {icons:<FaGithub/>, path:''},
-    {icons:<FaLinkedin/>, path:''},
-    {icons:<TbBrandLeetcode/>, path:''}
+    {icons:<FaGithub/>, path:'https://github.com/himanshubohra13'},
+    {icons:<FaLinkedin/>, path:'https://www.linkedin.com/in/himanshu-bohra-563869156/'},
+    {icons:<TbBrandLeetcode/>, path:'https://leetcode.com/u/himanshubohra206/'}
 ]
 
 const Social = ({containerStyles, iconStyles}) => {
