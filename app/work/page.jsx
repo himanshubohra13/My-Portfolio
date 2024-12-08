@@ -24,7 +24,7 @@ const projects = [
             { name: "RabbitMQ" }
         ],
         image: '/himanshubohra/assets/work/slate1.png',
-        live: 'https://www.slate.greyb.com',
+        live: 'https://slate.greyb.com/',
         github: ''
     },
     {
