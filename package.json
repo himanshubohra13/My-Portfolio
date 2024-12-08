@@ -8,8 +8,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "export": "next export",
-    "deploy": "npm run build && npm run export && touch ./out/.nojekyll && gh-pages -d out -t true"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d out"
   },
   "dependencies": {
     "@radix-ui/react-dialog": "^1.1.1",
@@ -29,8 +29,7 @@
     "react-icons": "^5.3.0",
     "swiper": "^11.1.10",
     "tailwind-merge": "^2.5.2",
-    "tailwindcss-animate": "^1.0.7",
-    "touch-cli": "^0.0.1"
+    "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
     "eslint": "^8",
