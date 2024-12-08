@@ -40,7 +40,7 @@ const about={
 // experience stats
 
 const experience={
-    icon:"/assets/resume/badge.svg",
+    icon:"/himanshubohra/assets/resume/badge.svg",
     title:"My experience",
     description:"I have worked with dynamic teams to build impactful web applications, gaining hands-on expertise in full-stack development, API design, and database management, using technologies.",
     items:[
@@ -62,7 +62,7 @@ const experience={
 // education data
 
 const education={
-    icon:"/assets/resume/cap.svg",
+    icon:"/himanshubohra/assets/resume/cap.svg",
     title:"My Education",
     description:"I hold a Bachelor's degree in Electronics and Communication from the University Institute of Engineering Technology, where I developed a strong foundation in technical problem-solving and analytical skills, complemented by a passion for software development.",
     items:[

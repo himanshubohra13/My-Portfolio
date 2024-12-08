@@ -23,7 +23,7 @@ const projects = [
             { name: "Caddy" },
             { name: "RabbitMQ" }
         ],
-        image: '/assets/work/slate1.png',
+        image: '/himanshubohra/assets/work/slate1.png',
         live: 'https://www.slate.greyb.com',
         github: ''
     },
@@ -37,7 +37,7 @@ const projects = [
             { name: 'Fastapi' },
             { name: 'Bootstrap' },
         ],
-        image: '/assets/work/patentplus.png',
+        image: '/himanshubohra/assets/work/patentplus.png',
         live: 'https://chromewebstore.google.com/detail/patent-plus/iceleckhffpjkcbbeadlojphojbjnmgm',
         github: ''
     },
@@ -53,7 +53,7 @@ const projects = [
             { name: 'Django' },
             { name: 'Machine & Deep Learning' },
         ],
-        image: '/assets/work/apnadoctor.png',
+        image: '/himanshubohra/assets/work/apnadoctor.png',
         live: '',
         github: 'https://github.com/himanshubohra13/ApnaDoctor'
     },
@@ -67,7 +67,7 @@ const projects = [
             { name: 'Tailwind' },
             { name: 'React' },
         ],
-        image: '/assets/work/magicmatch.png',
+        image: '/himanshubohra/assets/work/magicmatch.png',
         live: 'https://mem-ory-game.web.app/',
         github: 'https://github.com/himanshubohra13/MemoryGame'
     }
