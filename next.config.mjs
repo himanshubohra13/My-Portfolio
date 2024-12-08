@@ -7,7 +7,7 @@ const nextConfig = {
   },
   assetPrefix: isProd ? '/himanshubohra/' : '',
   basePath: isProd ? '/himanshubohra' : '',
-  output: 'export'
+  output: 'standalone'
 };
 
 export default nextConfig;
